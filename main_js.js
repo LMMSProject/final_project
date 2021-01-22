@@ -173,8 +173,8 @@ function displayCart() {
                 productContainer.innerHTML += `
                 <div class="product">
                     <i class="delete far fa-times-circle fa-2x"></i>
-                    <img class="cart-img" src="./PhotoStudio/${item.tag}.jpg">  
-                    <span class="sm-hide">${item.name}</span>
+                    <img class="cart-img" src="./PhotoStudio/${item.image}.jpg">  
+                    <span class="sm-hide">${item.productName}</span>
                 </div>
            <div class="price sm-hide">$${item.price}.00</div>
 
