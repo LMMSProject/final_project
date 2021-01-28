@@ -115,8 +115,8 @@ function cartNumbers(product, action) {
 }
 
 function setItems(product) {
-    // let productNumbers = localStorage.getItem('cartNumbers');
-    // productNumbers = parseInt(productNumbers);
+    let productNumbers = localStorage.getItem('cartNumbers');
+    productNumbers = parseInt(productNumbers);
     let cartItems = localStorage.getItem('productsInCart');
     cartItems = JSON.parse(cartItems);
 
@@ -173,8 +173,8 @@ function displayCart() {
                 productContainer.innerHTML += `
                 <div class="product">
                     <i class="delete far fa-times-circle fa-2x"></i>
-                    <img class="cart-img" src="./PhotoStudio/${item.tag}.jpg">  
-                    <span class="sm-hide">${item.name}</span>
+                    <img class="cart-img" src="./PhotoStudio/${item.image}.jpg">  
+                    <span class="sm-hide">${item.productName}</span>
                 </div>
            <div class="price sm-hide">$${item.price}.00</div>
 
